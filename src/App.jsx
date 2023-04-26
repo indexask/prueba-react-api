@@ -6,7 +6,7 @@ import { Cards } from './assets/components/Cards'
 function App({results}) {
   const [busqueda, setBusqueda] = useState('')
 
-  const [url,setUrl] = useState('https://pokeapi.co/api/v2/pokemon/?limit=40')
+  const [url,setUrl] = useState('https://pokeapi.co/api/v2/pokemon/?limit=52')
     const estado = UseFetch(url)
     const {cargando,data}=estado
     cargando? console.log('cargando'):console.log(data.results)
